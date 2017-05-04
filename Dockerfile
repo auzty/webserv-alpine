@@ -4,6 +4,9 @@ RUN adduser testinguser -D
 WORKDIR /
 
 RUN mkdir -p /opt/apps
+
+ADD public /opt/apps
+
 VOLUME /opt/apps
 
 USER testinguser
